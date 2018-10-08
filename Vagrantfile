@@ -5,8 +5,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.box = "centos/7"
   config.vm.hostname = "playground-openshift"
-  #config.vm.network "forwarded_port", guest: 8443, host: 8443
-  #config.vm.network "public_network", bridge: "en0: Wi-Fi (AirPort)"
   config.vm.network "private_network", type: "dhcp"
 
   config.vm.provider "virtualbox" do |vbx|
